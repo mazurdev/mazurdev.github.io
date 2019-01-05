@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--styles -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+	<title>Mini lottery</title>
+</head>
+
+<body>
+
+	<div id="app">
+
+		<div id="names" class="container" v-if="state">
+			<h1>Enter a pair of any names</h1>
+			<div class="input_container">
+				<input type="text" v-model="inputName">
+				<button @click="addNameToList">Add</button>
+			</div>
+			<div class="error_label" v-if="showError">You must enter a name</div>
+			<div class="list_of_names">
+				<div v-for="(name,index) in names" :key="index" @click="removeName(index)">
+					{{ name }}
+				</div>
+			</div>
+			<div v-if="names.length > 1">
+				<div class="action_button" @click="showResults">Choose a winner</div>
+			</div>
+		</div>
+		<div id="result" class="container" v-if="!state">
+			<div class="result_container">
+				<h1>The winner is:</h1>
+				<div class="result_value">{{ result }}</div>
+				<div class="action_button" @click="resetApp">Come on again</div>
+			</div>
+		</div>
+	</div>
+</body>
+<!-- script -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="./main.js"></script>
+
+</html>
