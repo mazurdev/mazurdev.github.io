@@ -6,9 +6,7 @@ by [@mazurdev](https://twitter.com/mazurdev)
 ## Stack
 
 * JavaScript
-* jQuery v3.2.1
-* Popper.js v.1.12.3
-* Bootstrap v.4.0.0-beta.2
+* Bootstrap
 
 ## Getting started
 ```bash
