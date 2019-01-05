@@ -1,0 +1,33 @@
+body {
+	background: #136a8a;
+	background: -webkit-linear-gradient(to left, #256A76, #00DAFF);
+	background: linear-gradient(to left, #256A76, #00DAFF);
+	font-family: 'Montserrat', sans-serif;
+}
+h1 {
+		font-size: 40px;
+		color: #fffaf0;
+		font-family: 'Montserrat', sans-serif;
+}
+form {
+		margin: 100px auto;
+}
+.main-content {
+		margin: 50px auto;
+		background-color: #fffaf0;
+		-webkit-box-shadow: -1px 20px 52px -13px rgba(0,0,0,0.75);
+			-moz-box-shadow: -1px 20px 52px -13px rgba(0,0,0,0.75);
+			box-shadow: -1px 20px 52px -13px rgba(0,0,0,0.75);
+}
+.messages {
+		color: #fffaf0;
+}
+#result {
+			text-align: center;
+}
+.btn {
+		width: 100%;
+}
+.spinner  {
+		text-align: center;
+}
