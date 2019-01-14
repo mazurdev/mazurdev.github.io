@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Random Names</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="manifest" href="manifest.json">
+	<!--icon-->
+	<link rel="icon" type="image/png" sizes="36x36" href="assets/icons/Icon-36.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/Icon-192.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="assets/icons/Icon-512.png">
+	<link rel="icon" type="image/x-icon" href="assets/icons/Icon-36.png">
+</head>
+
+<body>
+	<div class="container">
+		<div id="content" class="content">
+			<h1>Random Names</h1>
+			<form action="#" id="random-names" class="card-shadow">
+				<div class="row">
+					<div class="twelve columns">
+
+						<label for="genre" class="center-text">Select gender:</label>
+						<select class="u-full-width select-option" id="genre">
+							<option value=''>Gender</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+						</select>
+
+						<label for="country" class="center-text">Choose the country:</label>
+						<select class="u-full-width select-option" id="country">
+							<option class="grey-text" value=''>Country</option>
+							<option value="russia">Russia</option>
+							<option value="ukraine">Ukraine</option>
+							<option value="spain">Spain</option>
+							<option value="portugal">Portugal</option>			
+							<option value="india">India</option>
+							<option value="italy">Italy</option>
+							<option value="china">China</option>
+							<option value="united states">United States</option>
+							<option value="costa rica">Costa Rica</option>
+							<option value="france">France</option>
+							<option value="japan">Japan</option>
+						</select>
+
+						<label class="center-text">How many letters should be the name?</label>
+						<input type="number" id="quantity" class="u-full-width select-option" min="5" max="14" value="6">
+						<input class="card-shadow button-primary u-full-width btn-random" type="submit" value="• RANDOM •">
+					</div>
+
+					
+				</div>
+				<div class="row">
+						<div class="twelve columns">
+								<div id="result"></div>
+							</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
