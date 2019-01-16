@@ -1,0 +1,29 @@
+{
+  "name": "Mini CRM",
+  "short_name": "MAZUR.dev",
+  "lang": "en-US",
+  "scope": "/",
+  "start_url": "/?utm_source=a2hs",
+  "display": "standalone",
+  "gcm_sender_id": "330561634409",
+  "gcm_user_visible_only": true,
+  "orientation": "any",
+  "theme_color": "#256A76",
+  "background_color": "#242931",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "\/icons/Android-Icon-192.png",
+      "sizes": "192x192",
+      "type": "image\/png",
+      "density": "4.0"
+    },
+    {
+      "src": "\/icons/Android-Icon-512.png",
+      "sizes": "512x512",
+      "type": "image\/png",
+      "density": "4.0"
+    }
+  ]
+}
